@@ -1,0 +1,372 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+}
+
+
+/******************************************
+/* LAYOUT FOR NAV
+/*******************************************/
+header,nav{
+  background: #65768a;
+  height: 100px;
+  padding-top: 15px;
+}
+
+
+header nav *{
+  float: left;    
+  padding: 0 5%;
+}
+
+nav>ul{
+  width: 40%;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+nav li{
+    font: 18px  'roboto', sans-serif;
+    font-weight: bold;
+    color: white;
+    list-style-type: none;
+    padding-right: 5px;
+    
+}
+
+nav>img{
+  margin: 0 5% 0 5%;
+  padding-top: 5px;
+  vertical-align: middle;
+  
+}
+
+
+nav>.donate_lg{
+  float:right;
+  margin: 0 2.5% 0 5%;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(128, 145, 161);
+  text-decoration: none;
+
+}
+
+footer {
+
+}
+
+/******************************************
+/* STRUCTURE FOR MAIN CONTENT 
+/*******************************************/
+
+main{
+  float: left;
+  /* height: 700px; */
+  width: 100%;
+}
+
+main> .firstsection{  
+  float: left;
+  background: #66768a;
+  height: 40%;
+}
+
+main> .secondsection{
+  float: left;
+  width: 100%;
+  padding: 10%;
+  background-color: white;
+}
+
+
+main> .thirdsection{
+    float: left;
+    width: 100%;
+    padding: 10%;
+    background-color: #dbdfe2;
+}
+
+
+main> .fourthsection{
+  float: left;
+  width: 100%;
+  padding: 5%;
+  background-color: white;
+}
+
+
+
+h2{
+  text-align: center;
+}
+
+
+/******************************************
+/* LAYOUT FOR FIRST SECTION
+/*******************************************/
+
+
+
+h1{
+  font-family: 'Roboto', sans-serif;
+  font-size: 80px;
+  color: white;
+  text-align: center;
+}
+
+section>p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 32px;
+  color: white;
+  text-align: center;
+  padding: 0 20% 0 20%;
+}
+
+.watch_video{
+  height: 100px;
+  text-align: center;
+}
+.watch_video> a{
+  text-decoration: none;
+  color: white;
+  font-size: 26px;
+}
+
+.watch_video>img{
+  max-width: 100%;  
+  position: relative;
+}
+
+.bbi_container{
+  height: 5%;
+  text-align: center;
+  color: #485057;
+  padding: 10px 10px 20px 10px;
+}
+
+/******************************************
+/* LAYOUT FOR SECOND SECTION
+/*******************************************/
+
+.secondsection p{  
+  color: black;
+}
+
+.secondsection section h2{
+  font-size: 40px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+/******************************************
+/* LAYOUT FOR THIRD SECTION
+/*******************************************/
+
+.thirdsection section{
+  float: left;
+  width: 50%;
+  
+}
+
+.thirdsection section > p{
+  font-size: 18px;
+  color: #586474;
+  line-height: 24px;
+  padding: 0 10% 0 10%;
+  font-family: sans-serif;
+  
+}
+
+.thirdsection section .first_box{
+  float: left;
+  width: 65%;
+  background: #66768a;
+  padding: 20%;
+  margin: 15%;
+}
+
+.thirdsection section .second_box{
+  float: left;
+  width: 65%;
+  background: #66768a;
+  padding: 20%;
+  margin: 15%;
+}
+
+.link_1,
+.link_2{
+  text-align: center;
+  margin: 10px;
+  padding: 30px;
+  
+}
+
+.thirdsection a{
+  text-decoration: none;   
+  padding: 2.5% 5%;
+  border: 1px solid rgb(66, 66, 66);
+  color: black;
+  font: 18px  sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT FOR FOURTH SECTION
+/*******************************************/
+
+
+.fourthsection section > p{
+  font-size: 18px;
+  color: #586474;
+  line-height: 24px;
+  padding: 0 10% 0 10%;
+  font-family: sans-serif;
+}
+
+  .fourthsection a{
+    text-decoration: none;   
+    padding: 1.5% 2.5%;
+    border: 1px solid rgb(66, 66, 66);
+    color: black;
+    font: 18px  sans-serif
+  }
+
+  .link_3{
+    text-align: center;
+    margin: 10px;
+    padding: 30px;
+  }
+
+
+  /******************************************
+/* LAYOUT FOR FOOTER
+/*******************************************/
+footer{
+   background: #161f2a;
+   float: left;
+   width: 100%;   
+}
+
+
+
+footer > .footer_left{
+  float: left;  
+  width: 50%;
+  margin: 2%;
+}
+footer > .footer_right{
+  float: right;
+  margin-right: 2.5%;
+}
+
+
+
+
+
+.footer_left section a{
+color: white;
+text-decoration: none;
+list-style-type: none;
+padding: 5%;
+}
+
+.footer_left section span{
+  padding: 5%;
+  
+
+}
+
+
+
+.footer_icons{
+  float: left;
+  width: 33.3333%;  
+  margin: 0 0 5% 5%;
+}
+
+
+.site_map{
+  color: grey;
+  float: left;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+}
+
+.classes_hireus{
+  float: left;
+  width: 100%;
+}
+
+
+.contribute{
+  width: 100%;
+  float: left;
+  color: grey;  
+  margin-top: 5%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+}
+
+.give_volunteer{
+  width: 100%;
+  float: left;
+
+}
+
+.classes_hireus a,
+.give_volunteer a{
+  color: white;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+}
+
+footer ul > span{ 
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.footer_right ul > li, a{
+  color: white;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  padding: 5px 5% 0 0;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
